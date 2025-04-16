@@ -1,17 +1,37 @@
+
 using UnityEngine;
 using UnityEngine.AI;
 
+///-------------------------------------------------------------------------------------------------
+/// <summary>   A move selected game object script. </summary>
+///
+/// <remarks>   16/04/2025. </remarks>
+///-------------------------------------------------------------------------------------------------
+
 public class MoveSelectedGameObjectScript : MonoBehaviour
 {
+    /// <summary>   The object select script. </summary>
     protected ObjectSelectScript _objSelectScript;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// </summary>
+    ///
+    /// <remarks>   16/04/2025. </remarks>
+    ///-------------------------------------------------------------------------------------------------
+
     void Start()
     {
         _objSelectScript = FindAnyObjectByType<ObjectSelectScript>();
     }
 
-    // Update is called once per frame
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>   Update is called once per frame. </summary>
+    ///
+    /// <remarks>   16/04/2025. </remarks>
+    ///-------------------------------------------------------------------------------------------------
+
     void Update()
     {
         if (_objSelectScript != null)
@@ -35,6 +55,15 @@ public class MoveSelectedGameObjectScript : MonoBehaviour
         }
     }
 
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>   Gets selected position. </summary>
+    ///
+    /// <remarks>   16/04/2025. </remarks>
+    ///
+    /// <param name="gameObject">   The game object. </param>
+    ///
+    /// <returns>   The selected position. </returns>
+    ///-------------------------------------------------------------------------------------------------
 
     protected Vector3 GetSelectedPosition(GameObject gameObject)
     {

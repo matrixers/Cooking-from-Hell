@@ -1,18 +1,40 @@
+
 using UnityEngine;
+
+///-------------------------------------------------------------------------------------------------
+/// <summary>   A test camera controller script. </summary>
+///
+/// <remarks>   16/04/2025. </remarks>
+///-------------------------------------------------------------------------------------------------
 
 public class TestCameraControllerScript : MonoBehaviour
 {
+    /// <summary>   The translate speed. </summary>
     public float TranslateSpeed = 10;
+    /// <summary>   The rotation speed. </summary>
     public float RotationSpeed = 50;
+    /// <summary>   True to rotate with mouse. </summary>
     public bool RotateWithMouse = true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>
+    /// Start is called once before the first execution of Update after the MonoBehaviour is created.
+    /// </summary>
+    ///
+    /// <remarks>   16/04/2025. </remarks>
+    ///-------------------------------------------------------------------------------------------------
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    ///-------------------------------------------------------------------------------------------------
+    /// <summary>   Update is called once per frame. </summary>
+    ///
+    /// <remarks>   16/04/2025. </remarks>
+    ///-------------------------------------------------------------------------------------------------
+
     void Update()
     {
         if (Input.GetKey(KeyCode.W))
