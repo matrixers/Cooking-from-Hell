@@ -62,7 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\TestArea\Scripts\ObjectSelectScript.cs" />
+    <Compile Include="Assets\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Player\PlayerCam.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Player\MoveCameraWPlayer.cs" />
     <Compile Include="Assets\TestArea\Scripts\TestCameraControllerScript.cs" />
     <Compile Include="Assets\TestArea\Scripts\MoveSelectedGameObjectScript.cs" />
   </ItemGroup>
